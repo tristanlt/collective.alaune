@@ -1,0 +1,27 @@
+<span tal:omit-tag="python:True" tal:condition="view/activate"> 
+
+<div class="NewsOnTop">
+	<div class="NewsOnTop-head">
+		<div class="NewsOnTop-mask">
+		</div>
+		<div class="NewsOnTop-title">
+			<p tal:content="view/title"> Pas Gawinga !!</p>
+		</div>
+	</div>
+	<div class="NewsOnTop-news">
+		<div tal:omit-tag="python:True" tal:repeat="NewOnTop view/newsObj">
+			<div class="NewsOnTop-new">
+				<a tal:attributes="href NewOnTop/absolute_url; alt NewOnTop/title" >
+					<img class="image-inline" tal:attributes="src string:${NewOnTop/absolute_url}/image; alt NewOnTop/title" />
+				</a>
+				<a tal:attributes="href NewOnTop/absolute_url; alt NewOnTop/title" > 
+					<h3> <span tal:content="NewOnTop/title"> Title </span> </h3>
+				</a>
+				<p> <span tal:content="NewOnTop/Description"> Description </span> </p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+</span>
