@@ -1,0 +1,4 @@
+<layers>
+    <layer name="collective.alaune"
+           interface="collective.alaune.browser.interfaces.ILayer" />
+</layers>
