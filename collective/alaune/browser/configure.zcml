@@ -10,7 +10,7 @@
   
   <browser:viewlet
         name="collective.alaune.alaune"
-        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
         class=".viewlets.ALaUne"
         permission="zope2.View"
         />
